@@ -12,11 +12,11 @@ def profile (request):
 def contacts (request):
 
     if request.method == 'POST':
-        fname = request.POST['fname']
+        fname = request.POST['fullname']
         email = request.POST['email']
-        mssg = request.POST['mssg']
+        mssg = request.POST['mssge']
 
-        register = Register(fname=fname, email=email, mssg=mssg)
+        register = Register(fullname=fullname, email=email, mssge=mssge)
         register.save()
         print("happy birthday")
 
