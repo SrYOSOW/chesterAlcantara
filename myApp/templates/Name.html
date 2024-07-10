@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <link rel="stylesheet" href="{% static 'style.css'%}">
+        <link rel="icon" href="{% static ''%}"> 
+        <title> Title </title>
+    </head>
+
+    <body id="none"style="background-image:url('{% static 'bodybackground2.jpg' %}');">
+
+    <body>
+
+    <div class="header">
+        <a href="{% url 'Name'%}" class="logo">Chester Alcantara</a>
+     
+        <div class="navbar">
+          
+            <a href="{% url 'helloworld' %}">Portfolio</a>
+            <a href="{% url 'profile' %}">Profile</a>
+            <a href="{% url 'contacts' %}">Contacts</a>
+            <a href="{% url 'abouts' %}">Abouts</a>
+
+    </div>
+    </div>
+    <section class="section" id="section-home">
+        <div class="section__container">
+          <div class="content">
+            
+            <h1 class="title">
+                 I'm <span>Chester<br>a</span> Frontend Developer
+              </h1>
+            <p class="description">
+                Hi there, my name is Chester Alcantara and I'm a web developer. I've been employed as a web developer for a while now. I think I'm a really driven individual that enjoys working to improve the functionality of the website. My passion is web development since I enjoy working on interesting projects. I get to express my creativity in this sector. It would be a pleasure to work for your prestigious company. It's all about me in this. I appreciate you interviewing me.
+            </p>
+            </div>
+          </div>
+         
+        
+        </div>
+      </section>
+
+    <div class="image">
+        <img src="{% static 'profile.jpg' %}" alt="profile" />
+    </div>
+    
+    <style>
+
+        body, html {
+                height: 100%;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: aliceblue;
+                font-size: small;
+            }
+            
+            
+            .content {
+                    text-align: left;
+                    max-height: 800px;
+                    max-width: 600px;
+                    padding: 50px 100px;
+                    background: rgba(0, 0, 0, 0.5); /* Optional: Add background for readability */
+                    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+                    background-repeat: no-repeat;
+                    display: contents;
+                }
+                
+                </style>
+    
+</body> 
+</html>

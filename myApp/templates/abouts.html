@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <link rel="stylesheet" href="{% static 'style.css'%}">
+        <link rel="stylesheet" href="{% static 'transition.css'%}">
+        <link rel="icon" href="{% static ''%}"> 
+        <title> Title </title>
+    </head>
+
+    <body id="none"style="background-image:url('{% static 'bodybackground2.jpg' %}');">
+
+    <body>
+
+    <div class="header">
+        <a href="{% url 'Name'%}" class="logo">About Me</a>
+     
+            <div class="navbar">
+                
+                <a href="{% url 'helloworld' %}">Portfolio</a>
+                <a href="{% url 'profile' %}">Profile</a>
+                <a href="{% url 'contacts' %}">Contacts</a>
+                <a href="{% url 'abouts' %}">Abouts</a>
+            </div>
+    </div>
+
+   
+        <div class="content">
+
+            <h1 class="title">
+                I'm Chester Alcantara  
+            </h1>
+            <p class="description">
+                 a skilled web developer with a passion for creating Wonderful, Responsive, and user-friendly websites.
+            </p>
+            <br>
+            <br>
+            <h1>Hi Im CHester Alcantara</h1>
+            <p>a 22-year-old IT student, embodies a relentless thirst for knowledge and continuous improvement. Fueled by curiosity and passion, he navigates the intricate world of technology with enthusiasm and determination. Proficient in programming languages like Python and Java, John seeks to deepen his understanding of cybersecurity and data science. His journey is defined by a commitment to mastering new skills, exploring emerging technologies, and contributing meaningfully to the IT field. With each challenge he encounters, John sees an opportunity to grow, innovate, and shape the future of technology.</p>
+            
+    
+           
+        </div>
+
+        <style>
+
+body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        font-size: small;
+    }
+    
+    
+    .content {
+        color: black;
+            text-align: left;
+            max-width: 600px;
+            padding: 20px 100px;
+            background: white;
+            border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+        }
+        
+        </style>
+
+</body> 
+</html>

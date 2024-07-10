@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <link rel="stylesheet" href="{% static 'style.css'%}">
+        <link rel="stylesheet" href="{% static 'transition.css'%}">
+        <link rel="icon" href="{% static ''%}"> 
+        <title> Title </title>
+    </head>
+
+    <body id="none"style="background-image:url('{% static 'bodybackground2.jpg' %}');">
+
+    <body>
+
+    <div class="header">
+        <a href="{% url 'Name'%}" class="logo">Profile</a>
+     
+            <div class="navbar">
+               
+                <a href="{% url 'helloworld' %}">Portfolio</a>
+                <a href="{% url 'profile' %}">Profile</a>
+                <a href="{% url 'contacts' %}">Contacts</a>
+                <a href="{% url 'abouts' %}">Abouts</a>
+
+            </div>
+    </div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+    <div class="profile-section">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="{% static 'profile.jpg' %}" alt="Profile Picture">
+            </div>
+            <div class="profile-details">
+                <h2>Chester Alcantara</h2>
+                <p>Frontend Developer</p>
+                <p>As an IT student, I am deeply passionate about exploring the intersection of technology and innovation. I thrive on challenges that require creative problem-solving and enjoy diving into complex systems to uncover solutions. With a strong foundation in programming languages such as Java, Python, and JavaScript, I am eager to apply my skills to real-world projects that have a positive impact. Beyond coding, I am interested in cybersecurity and data analysis, continuously learning and adapting to the evolving IT landscape. Through hands-on experience and academic rigor, I am preparing to contribute effectively to the tech industry and drive future advancements in technology</p>
+                <br>
+                <br>
+                
+            </div>
+        </div>
+    </div>
+    <style>
+
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: x-small;
+    }
+    
+    
+    .content {
+        color: black;
+            text-align: left;
+            max-width: 600px;
+            padding: 20px 100px;
+            background: white;
+            border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+        }
+        
+        </style>
+
+</body> 
+</html>
